@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
     <title> Starbucks Home Page </title>
 </head>
 <body>
@@ -20,8 +23,8 @@
         <div id="nav-right">
             <img src="Images/location-icon.svg" class="icon">
             <p> Find a store </p>
-            <p> Sign In </p>
-            <p> Join now </p>
+            <p id="nav-button1"> Sign In </p>
+            <p id="nav-button2"> Join now </p>
         </div>
     
     </div>
@@ -33,10 +36,10 @@
 
         <div class="advert-box">
                     <img src="Images/seeyouonthepatio.jpeg" class="advertisement-picture">
-            <div>
-                <div class="info-box" id="advert-1">
-                    <h2> See you on the patio </h2>
-                    <p> Soak up the season with Summer-Berry Refreshers and Iced Horchata Oatmilk Shaken Espresso. Enjoy these cool favorites while you can. Here for a limited time.</p>
+            <div class="info-box" id="advert-1">
+                <div>
+                    <p class="text-title" id="fontColor1"> See you on the patio </p>
+                    <p class="text-info" id="fontColor1"> Soak up the season with Summer-Berry Refreshers and Iced Horchata Oatmilk Shaken Espresso. Enjoy these cool favorites while you can. Here for a limited time.</p>
                     <p> View the menu</p>
                 </div>
             </div>
@@ -45,29 +48,33 @@
      <!-- Advertisement 2-->
         <div class="advert-box">
             <div class="info-box" id="advert-2">
-                <h2> It starts with free</h2>
-                <p> Enjoy a free handcrafted drink when you make a qualifying purchase during your first week as a Starbucks Rewards member.* </p>
+                <p class="text-title"> It starts with free</p>
+                <p class="text-info"> Enjoy a free handcrafted drink when you make a qualifying purchase during your first week as a Starbucks Rewards member.* </p>
             <p> Join now </p>
             </div>
-            <img src="Images/itstartswithfree.jpeg">
+            <img src="Images/itstartswithfree.jpeg" class="advertisement-picture">
         </div>
 
      <!-- Advertisement 3-->
         <div class="advert-box">
             <img src="Images/orderahead.jpeg" class="advertisement-picture">
-                <div class="info-box">
-                    <h2> Order ahead. Pick up and fly. </h2>
-                    <p> Make summer travel more chill wih the Starbucks app. Just find a store at an airport, order your favorites, pick up and go. </p>
+            <div class="info-box" id="advert-3">
+                <div>
+                    <p class="text-title" id="fontColor3"> Order ahead. Pick up and fly. </p>
+                    <p class="text-info" id="fontColor3"> Make summer travel more chill wih the Starbucks app. Just find a store at an airport, order your favorites, pick up and go. </p>
                     <p> Find a store</p>
                 </div>
+            </div>
         </div>
 
      <!-- Advertisement 4-->
         <div class="advert-box">
-            <div class="info-box">
-                <h2> FARM Rio + Starbucks</h2>
-                <p> We've teamed up with Brazilian fashion brand FARM Rio for an exclusive merch collection inspired by the beauty and culture of Rio de Janeiro.</p>
+            <div class="info-box" id="advert-4">
+                <div>
+                <p class="text-title" id="fontColor4"> FARM Rio + Starbucks</p>
+                <p class="text-info" id="fontColor4"> We've teamed up with Brazilian fashion brand FARM Rio for an exclusive merch collection inspired by the beauty and culture of Rio de Janeiro.</p>
                 <p> Learn more </p>
+                </div>
             </div>
             <img src="Images/farmrio.jpeg" class="advertisement-picture">
         </div>
@@ -75,73 +82,79 @@
      <!-- Advertisement 5-->
         <div class="advert-box">
             <img src="Images/refills.jpeg" class="advertisement-picture">
-            <div class="info-box">
-                <h2> Free refills while you stay </h2>
-                <p> When you stay to enjoy your handcrafted or brewed drink in the cafe, refills of hot and iced brewed coffee or tea are on us.**</p>
-                <p> Learn more </p>
+            <div class="info-box" id="advert-5">
+                <div>
+                    <p class="text-title" id="fontColor5"> Free refills while you stay </p>
+                    <p class="text-info" id="fontColor5"> When you stay to enjoy your handcrafted or brewed drink in the cafe, refills of hot and iced brewed coffee or tea are on us.**</p>
+                    <p> Learn more </p>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Terms and Conditions -->
-    <div id="terms-box">
-        <p> Valid for new Starbucks Rewards members for 7 days from sign up. Coupon will be available in the offers tab of your Strbucks app following signup and may take up to 48 hours to arrive. Good at participating U.S stores for a handcrafted menu-sized beverage with qualifying purchase (8$ max value). Qualifying purchase excludes alcohol, Starbucks Card and Card reloads. Limit one. cannot be combined with other offers or discounts. Excludes delivery services. Sign up by 9/28/2025.*</p>
+     <div id="term-border">
+        <div id="terms-box">
+            <p class="term"> Valid for new Starbucks Rewards members for 7 days from sign up. Coupon will be available in the offers tab of your Strbucks app following signup and may take up to 48 hours to arrive. Good at participating U.S stores for a handcrafted menu-sized beverage with qualifying purchase (8$ max value). Qualifying purchase excludes alcohol, Starbucks Card and Card reloads. Limit one. cannot be combined with other offers or discounts. Excludes delivery services. Sign up by 9/28/2025.*</p>
 
-        <p> ** Free refills of hot and iced brewed coffee or tea during same store visit. Excludes Cold brew, Nitro Cold Brew, Iced Tea Lemonade, and flavored Iced tea and Starbucks Refreshers base. At Participating stores. Visit starbucks.com/refills to learn more.</p>
+            <p class="term"> ** Free refills of hot and iced brewed coffee or tea during same store visit. Excludes Cold brew, Nitro Cold Brew, Iced Tea Lemonade, and flavored Iced tea and Starbucks Refreshers base. At Participating stores. Visit starbucks.com/refills to learn more.</p>
+        </div>
     </div>
+
     <!-- Footer-->
+    <div id="footer-box">
+        <div class="footer-subBox"> 
+                <h3 class="footer-title"> About Us</h3>
+            
+                <p class="footer-item"> Our Company </p>
+                <p class="footer-item"> Our Coffee </p>
+                <p class="footer-item"> About Starbucks </p>
+                <p class="footer-item"> Starbucks Archive </p>
+                <p class="footer-item"> Investor Relations </p>
+                <p class="footer-item"> Customer Service </p>
+                <p class="footer-item"> Contact Us </p>
+            
+        </div>
 
-    <div> <h3> About Us</h3>
-        <div>
-            <p> Our Company </p>
-            <p> Our Coffee </p>
-            <p> About Starbucks </p>
-            <p> Starbucks Archive </p>
-            <p> Investor Relations </p>
-            <p> Customer Service </p>
-            <p> Contact Us </p>
+        <div class="footer-subBox"> 
+                <h3 class="footer-title"> Careers</h3>
+            
+                <p class="footer-item"> Culture and Values </p>
+                <p class="footer-item"> Velonging at Starbucks </p>
+                <p class="footer-item"> College Achievement Plan </p>
+                <p class="footer-item"> Alumni Community </p>
+                <p class="footer-item"> U.S Careers</p>
+                <p class="footer-item"> International Careers </p>
+            
+        </div>
+
+        <div class="footer-subBox"> 
+            <h3 class="footer-title"> Social Impact </h3>
+            
+                <p class="footer-item"> Communities </p>
+                <p class="footer-item"> Starbucks Foundation </p>
+                <p class="footer-item"> Sustainability </p>
+                <p class="footer-item"> Environmental and Social Impact Reporting </p>
+            
+        </div>
+
+        <div class="footer-subBox"> 
+            <h3 class="footer-title"> For Business Partners </h3>
+            
+                <p class="footer-item"> Landlord Support Center </p>
+                <p class="footer-item"> Suppliers </p>
+                <p class="footer-item"> Corporate Gift Card Sales </p>
+                <p class="footer-item"> Office and Foodservice Coffee </p>
+        </div>
+
+        <div class="footer-subBox">
+             <h3 class="footer-title"> Order and Pick Up </h3>
+                <p class="footer-item"> Order on the App </p>
+                <p class="footer-item"> Order on the Web </p>
+                <p class="footer-item"> Delivery </p>
+                <p class="footer-item"> Order and Pick Up Options </p>
+                <p class="footer-item"> Explore and Find Coffee for Home </p>
         </div>
     </div>
-
-    <div> <h3> Careers</h3>
-        <div>
-            <p> Culture and Values </p>
-            <p> Velonging at Starbucks </p>
-            <p> College Achievement Plan </p>
-            <p> Alumni Community </p>
-            <p> U.S Careers</p>
-            <p> International Careers </p>
-        </div>
-    </div>
-
-    <div> <h3> Social Impact </h3>
-        <div>
-            <p> Communities </p>
-            <p> Starbucks Foundation </p>
-            <p> Sustainability </p>
-            <p> Environmental and Social Impact Reporting </p>
-        </div>
-    </div>
-
-    <div> <h3> For Business Partners </h3>
-        <div>
-            <p> Landlord Support Center </p>
-            <p> Suppliers </p>
-            <p> Corporate Gift Card Sales </p>
-            <p> Office and Foodservice Coffee </p>
-        </div>
-    </div>
-
-    <div> <h3> Order and Pick Up </h3>
-        <div>
-            <p> Order on the App </p>
-            <p> Order on the Web </p>
-            <p> Delivery </p>
-            <p> Order and Pick Up Options </p>
-            <p> Explore and Find Coffee for Home </p>
-        </div>
-    </div>
-
 </body>
 </html>
-
