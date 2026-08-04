@@ -1,21 +1,63 @@
-/* * {
+ * {
     margin: 0;
     padding: 0;
-} */
+    font-family: "Stack Sans Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+
+}
+
+// <weight>: Use a value from 200 to 700
+// <uniquifier>: Use a unique and descriptive class name
+
+.stack-sans-text-<uniquifier> {
+  font-family: "Stack Sans Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 /* Images */
 
 .icon {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
 }
 
 /* Navigation */
+
+#nav-button1{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 15px;
+    width: fit-content;
+    height: fit-content;
+
+
+}
+
+#nav-button2{
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    padding: 5px;
+    border-radius: 15px;
+    width: fit-content;
+    height: fit-content;
+
+}
+
 #nav-container {
     width: 100%;
-    height: 50px;
+    height: fit-content;
     border-bottom: .5px solid grey;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
 
 
 }
@@ -27,6 +69,9 @@
     height: 50%;
     width: 50%;
     padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
 }
 
 #nav-right{
@@ -34,41 +79,46 @@
     flex-direction: row;
     gap: 20px;
     padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    align-items: center;
 }
 
 /* Advertisements */
 
 .advertisement-picture{
     width: 50%;
-    height: 50%;
 }
 
 .advert-box{
-    width: 75%;
-    height: fit-content;
-    border: 1px solid black;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    width: 80%;
+    margin: 20px auto;
     display: flex;
 }
 
 .info-box{
-    width: fit-content;
-    height: 100%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 50%;
     text-align: center;
+    padding: 15px;
+}
+
+.text-title{
+    font-size: 50px;
+}
+
+.text-info{
+    font-size: 25px;
 }
 
 /* For advertisement 1*/
 #advert-1 {
-    background-color: rgb(46, 83, 52);
+     background-color: rgb(46, 83, 52); 
 }
+
+#fontColor1{
+    color: rgb(233, 232, 218);
+}
+
 /* For advertisement 2*/
 #advert-2 {
     background-color: rgb(209, 214, 164);
@@ -76,9 +126,61 @@
 
 /* For advertisement 3*/
 
+#advert-3 {
+     background-color: rgb(46, 83, 52); 
+}
+
+#fontColor3{
+    color: rgb(233, 232, 218);
+}
+
+/* For advertisement 4*/
+#advert-4 {
+     background-color: rgb(46, 83, 52); 
+}
+
+#fontColor4{
+    color: rgb(233, 232, 218);
+}
+
+/* For advertisement 5*/
+#advert-5 {
+    background-color:rgb(37, 103, 48); 
+}
+
+#fontColor5{
+    color: rgb(242, 241, 230);
+}
 
 /* Terms and Conditions */
+#term-border{
+    border-bottom: .5px solid grey;
+}
 
+#terms-box {
+    width: 50%;
+    margin: 0px auto 5px auto;
+}
+
+.term{
+    padding-top: 50px;
+    text-align: center;
+}
 
 /* Footer */
 
+#footer-box {
+    padding: 20px;
+    justify-content: flex-start;
+    display: flex;
+    border-bottom: .5px solid grey;
+}
+
+.footer-subBox{
+    padding: 30px;
+    justify-content: flex-start;
+}
+
+.footer-item{
+    padding: 10px;
+}
